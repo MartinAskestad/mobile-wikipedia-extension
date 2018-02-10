@@ -1,0 +1,20 @@
+{
+  "author":"Martin",
+  "name": "Mobile wikipedia (only)",
+  "version": "1.0",
+  "description": "Makes sure the only wikipedia used is the mobile one",
+  "icons": {
+    "40": "icons/wikipedia-40.png",
+    "20": "icons/wikipedia-20.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.wikipedia.org/*"
+      ],
+      "js": [
+        "wikipedia.js"
+      ]
+    }
+  ]
+}
